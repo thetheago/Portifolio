@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+    transition-timing-function: ease-in-out;
+    
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(#2c205c, #9f3e89);
+    overflow-x: hidden;
+    
+    
+}
+
+/* --------------------HEADER------------------------- */
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition-duration: 1s;
+}
+header a{
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+
+header .github_menu img{
+    border-radius: 30px;
+    background-color: white;
+    padding: 2px 2px 3px 2px;
+    width: 2.9vw;
+    position: relative;
+    top: 9px;
+    left: 10px;
+    margin-right: 20px;
+    
+}
+header .github_menu p{
+
+    display: inline-block;
+    font-size: 3vh;
+    font-weight: 600;
+    letter-spacing: 0.1vw;
+    height: 3vh;
+    position: relative;
+    left: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    color: white;
+    
+    
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+header ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+.inicio{
+    background-color: white;
+    color: black;
+}
+.inicio:hover{
+    background-color: rgb(249, 255, 197);
+    
+}
+
+/* --------------------SECTION------------------------- */
+section{
+    
+    width: 100vw;
+    height: 120vh;
+    position: relative;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#9f3e89, transparent);
+    z-index: 1000;
+
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    
+}
+section img#stars{
+    animation-name: shineShineLilStar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes shineShineLilStar {
+    0% {opacity: 0.1;}
+    50% {opacity: 1;}
+    100% {opacity: 0.1;}
+    
+}
+
+section img#planets{
+    z-index: 10;
+}
+section img#meteors{
+    z-index: 9;
+}
+#welcome{
+    transition-duration: 0.7s;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1.5);
+    position: absolute;
+    color: white;
+    font-size: 7.5vw;
+    z-index: 9;
+    transform: translateY(-100px);
+
+}
+.bttn{
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: white;
+    color: #2c205c;
+    font-size: 1.5em;
+    display: inline-block;
+    z-index: 9;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1.5);
+    transform: translateY(80px);
+}
+
+
+/* --------------------DIV-SOBRE------------------------- */
+
+.seta{
+    position: sticky;
+    bottom: 5vh;
+    left: 93vw;
+    padding: 5px 20px;
+    border-radius: 40px;
+    background: white;
+    color: #2c205c;
+    font-size: 2em;
+    z-index: 1001;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #9f3e89;
+    z-index: 1001;
+    left: 15px;
+    
+}
+.sec div{
+    width: 100%;
+
+}
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+.sec p{
+    font-size: 1.5em;
+    color: white;
+    white-space: pre-line; 
+}
+
+
+/* -----  */
+
+#div-sobre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: left;
+    align-items: center;
+}
+#div-sobre p{
+    line-height: 40px;
+}
+
+#div-sobre a{
+
+    text-decoration: none;
+    padding: 6px 15px;
+    color: black;
+    border-radius: 20px;
+    transition: 0.3s;
+    background-color: white;
+
+}
+
+
+.b-html{
+    color: rgb(255, 165, 149);
+    text-shadow: -1px 0 rgb(190, 81, 62), 0 1px rgb(190, 81, 62), 1px 0 rgb(190, 81, 62), 0 -1px rgb(190, 81, 62);
+}
+.b-css{
+    color: rgb(214, 228, 255);
+    text-shadow: -1px 0 rgb(58, 89, 148), 0 1px rgb(58, 89, 148), 1px 0 rgb(58, 89, 148), 0 -1px rgb(58, 89, 148);
+}
+.b-js{
+    color: rgb(255, 254, 181);
+    text-shadow: -1px 0 rgb(190, 188, 62), 0 1px rgb(190, 188, 62), 1px 0 rgb(190, 188, 62), 0 -1px rgb(190, 188, 62);
+}
+.b-php{
+    color: rgb(214, 228, 255);
+    text-shadow: -1px 0 rgb(58, 89, 148), 0 1px rgb(58, 89, 148), 1px 0 rgb(58, 89, 148), 0 -1px rgb(58, 89, 148);
+}
+.b-jquery{
+    color: white;
+    text-shadow: -1px 0 rgb(14, 49, 114), 0 1px rgb(14, 49, 114), 1px 0 rgb(14, 49, 114), 0 -1px rgb(14, 49, 114);
+}
+
+#separador{
+    padding: 0px;
+}
+#separador h1{
+    border-top: 2px solid white;
+    width: 60vh;
+    position: relative;
+    left: 36vw;
+}
+
+
