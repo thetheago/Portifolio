@@ -14,8 +14,7 @@ body{
     min-height: 100vh;
     background: linear-gradient(#2c205c, #9f3e89);
     overflow-x: hidden;
-    
-    
+    height: 157vh;
 }
 
 /* --------------------HEADER------------------------- */
@@ -269,4 +268,18 @@ section img#meteors{
     left: 36vw;
 }
 
+.content-github {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.content-github aside img {
+    border: 5px white solid;
+    border-radius: 50%;
+}
+
+#div-github {
+    height: 900px;
+}
 
